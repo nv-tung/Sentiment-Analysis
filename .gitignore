@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+vncorenlp_fresh/
+VnCoreNLP-*.jar
+models/
+DuLieu_ViSFD/
+UIT-ViSFD/
+sample_data/
