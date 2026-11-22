@@ -2,7 +2,7 @@
 
 So sánh TF-IDF + Logistic Regression, BiLSTM và PhoBERT; đánh giá ảnh hưởng của tách từ, teencode và văn bản không dấu.
 
-## Dữ liệu (Người A)
+## Dữ liệu 
 
 Dữ liệu chính: **UIT-VSFC** (phản hồi sinh viên), dùng đúng split gốc của Hugging Face
 (`uitnlp/vietnamese_students_feedback`).
