@@ -59,12 +59,13 @@ Kết quả lưu ở `results/<tên>_metrics.json` và `results/<tên>_cm.png`.
 
 ## Kết quả baseline (TF-IDF unigram + Logistic Regression, có tách từ, tập test)
 
-| Cấu hình | Accuracy | Macro-F1 |
-|---|---|---|
-| C=1 mặc định | 88,57% | ~0,65 |
-| Tuning theo macro-F1 (C=10) | ~89% | ~0,73 |
+| Cấu hình | Accuracy | Macro-F1 | F1 neutral |
+|---|---|---|---|
+| C=1 mặc định | 88,57% | 0,6455 | 0,1196 |
+| Tuning theo macro-F1 (C=10) | 89,10% | 0,7258 | 0,3525 |
 
-Lớp neutral là điểm yếu chính (F1 ~0,35 sau tuning).
+Lớp neutral là điểm yếu chính: với C=1 mô hình gần như không nhận ra câu trung tính (recall 6,6%),
+sau tuning recall lên 25,8% nhưng F1 vẫn chỉ 0,35.
 
 ## Cài đặt
 
