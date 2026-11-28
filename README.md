@@ -66,7 +66,38 @@ Kết quả lưu ở `results/<tên>_metrics.json` và `results/<tên>_cm.png`.
 
 Lớp neutral là điểm yếu chính: với C=1 mô hình gần như không nhận ra câu trung tính (recall 6,6%),
 sau tuning recall lên 25,8% nhưng F1 vẫn chỉ 0,35.
+## Thí nghiệm  (TF-IDF + Logistic Regression, tập test)
 
+C được chọn theo macro-F1 trên tập dev. `max_features=5000`. Chi tiết trong `results/`.
+
+### Tách từ × n-gram (macro-F1)
+
+| | Unigram | Bigram |
+|---|---|---|
+| Có tách từ | 0,7111 | 0,7145 |
+| Không tách từ | 0,7242 | 0,7174 |
+
+Bốn cấu hình chênh nhau khoảng 0,01 (lớp neutral chỉ có 167 câu test), nên chưa thấy khác biệt rõ ràng giữa có và không tách từ.
+
+### Văn bản không dấu (macro-F1, mô hình chỉ học trên văn bản có dấu)
+
+| Cấu hình | Có dấu | Không dấu, không từ điển | Không dấu, có từ điển |
+|---|---|---|---|
+| segmented_uni | 0,7111 | 0,3773 | 0,4882 |
+| segmented_bi | 0,7145 | 0,3727 | 0,5279 |
+| raw_uni | 0,7242 | 0,2759 | 0,3664 |
+| raw_bi | 0,7174 | 0,3549 | 0,4966 |
+
+### Huấn luyện thêm bản không dấu (macro-F1)
+
+| Cấu hình | Có dấu | Không dấu, không từ điển | Không dấu, có từ điển |
+|---|---|---|---|
+| segmented_uni | 0,7050 | 0,6620 | 0,6891 |
+| segmented_bi | 0,7054 | 0,6679 | 0,7054 |
+| raw_uni | 0,7248 | 0,6800 | 0,7078 |
+| raw_bi | 0,7147 | 0,6868 | 0,7160 |
+
+Bản không dấu của tập test được tạo bằng cách bỏ dấu tự động, nên sạch hơn văn bản thật; kết quả là cận trên.
 ## Cài đặt
 
 ```
