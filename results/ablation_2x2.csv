@@ -1,0 +1,5 @@
+cau_hinh,C,dev_macro_f1,test_accuracy,test_macro_f1,test_f1_neutral
+tfidf_lr_segmented_uni,100,0.743,0.8654,0.7111,0.3506
+tfidf_lr_segmented_bi,100,0.7381,0.879,0.7145,0.3357
+tfidf_lr_raw_uni,1000,0.7385,0.8661,0.7242,0.3923
+tfidf_lr_raw_bi,100,0.7582,0.8784,0.7174,0.3478

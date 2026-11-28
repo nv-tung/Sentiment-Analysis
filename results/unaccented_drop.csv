@@ -1,0 +1,13 @@
+cau_hinh,tap_test,accuracy,macro_f1,macro_f1_giam
+tfidf_lr_segmented_uni,co_dau,0.8654,0.7111,0.0
+tfidf_lr_segmented_uni,khong_dau_khong_tudien,0.4267,0.3773,0.3338
+tfidf_lr_segmented_uni,khong_dau_co_tudien,0.5809,0.4882,0.2229
+tfidf_lr_segmented_bi,co_dau,0.879,0.7145,0.0
+tfidf_lr_segmented_bi,khong_dau_khong_tudien,0.4065,0.3727,0.3418
+tfidf_lr_segmented_bi,khong_dau_co_tudien,0.6292,0.5279,0.1866
+tfidf_lr_raw_uni,co_dau,0.8661,0.7242,0.0
+tfidf_lr_raw_uni,khong_dau_khong_tudien,0.3004,0.2759,0.4482
+tfidf_lr_raw_uni,khong_dau_co_tudien,0.4198,0.3664,0.3578
+tfidf_lr_raw_bi,co_dau,0.8784,0.7174,0.0
+tfidf_lr_raw_bi,khong_dau_khong_tudien,0.3945,0.3549,0.3625
+tfidf_lr_raw_bi,khong_dau_co_tudien,0.5872,0.4966,0.2208
