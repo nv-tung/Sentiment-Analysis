@@ -1,0 +1,13 @@
+cau_hinh,tap_test,C,macro_f1_tang_cuong,macro_f1_chi_co_dau,thay_doi
+tfidf_lr_segmented_uni,co_dau,100,0.705,0.7111,-0.0061
+tfidf_lr_segmented_uni,khong_dau_khong_tudien,100,0.662,0.3773,0.2847
+tfidf_lr_segmented_uni,khong_dau_co_tudien,100,0.6891,0.4882,0.2009
+tfidf_lr_segmented_bi,co_dau,10,0.7054,0.7145,-0.0091
+tfidf_lr_segmented_bi,khong_dau_khong_tudien,10,0.6679,0.3727,0.2952
+tfidf_lr_segmented_bi,khong_dau_co_tudien,10,0.7054,0.5279,0.1775
+tfidf_lr_raw_uni,co_dau,100,0.7248,0.7242,0.0006
+tfidf_lr_raw_uni,khong_dau_khong_tudien,100,0.68,0.2759,0.4041
+tfidf_lr_raw_uni,khong_dau_co_tudien,100,0.7078,0.3664,0.3414
+tfidf_lr_raw_bi,co_dau,10,0.7147,0.7174,-0.0027
+tfidf_lr_raw_bi,khong_dau_khong_tudien,10,0.6868,0.3549,0.3319
+tfidf_lr_raw_bi,khong_dau_co_tudien,10,0.716,0.4966,0.2194
